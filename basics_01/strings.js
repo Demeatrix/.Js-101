@@ -20,3 +20,7 @@ const sub = gameName.substring(0,6);
 console.log(sub);
 
 
+const new_string = gameName.slice(0,5)
+
+
+
