@@ -26,7 +26,7 @@ const user = {
 
 // Tea()
 
-// In functions we cannot use this, using this will result into undefined as the output
+// In functions we cannot use [this], using this will result into undefined as the output
 
 const coffee = () => {
     let username = "Shubh"
@@ -52,4 +52,4 @@ console.log(addTwo(5, 8));
 
 //  IF wrapped inside curly braces then need to write the return keyword   ---> explicit return
 // If wrapped inside parantheses then no need to write the return keyword  ---> implicit return 
-// If you want to define an object you need to wrap it inside curly braces  
+// If you want to define an object you need to wrap it inside curly braces 
