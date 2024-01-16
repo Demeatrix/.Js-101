@@ -1,0 +1,34 @@
+const languages = ["js", "ruby", "java", "python", "cpp"]
+
+// languages.forEach( function (value){
+//     console.log(value);
+// })
+
+// languages.forEach((item, index) => {
+//     console.log(`This is the item: ${item} and item no is ${index}`);
+// });
+
+// languages.forEach( (item, index, arr) => {
+//     console.log(item,index, arr);
+// })
+
+const anime = [
+    {
+        "animeName": "Kimetsu no Yaiba",
+        "animeGenre" : "Horror",  
+    },
+   
+    {
+        "animeName": "Haikuu",
+        "animeGenre" : "Sports, adventure",  
+    },
+   
+    {
+        "animeName": "Baki",
+        "animeGenre" : "Action, Thriller",  
+    },  
+]
+
+anime.forEach( (item) => {
+    console.log(item.animeName);
+})
