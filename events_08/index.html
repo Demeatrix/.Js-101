@@ -43,7 +43,11 @@
      1. Bubbling - when an event occurs on a particular element in the DOM (Document Object Model), such as a mouse click, the event is first captured by the innermost element and then propagated outward to the parent elements. This means that the event handler of the innermost element is triggered first, followed by its parent elements, up to the root of the document. think it of as a bubble going up from down.
 
      if third vaiable is false or in default(false), it will do bubbling print owl first  latter inside the ul will print second
-     2. Capturing - */
+
+     2. Capturing - Capturing is the reverse of bubbling. When an event occurs, it is first captured by the outermost element and then propagated inward toward the target element
+     */
+
+    // if we want to stop propogation or stop the bubbling of an event, we use stopPropagation()
 
     // best approach to use and it is widely used as of today
     // document.getElementById('owl').addEventListener('click', function(e){
@@ -57,6 +61,8 @@
     //     console.log("google clicked");
     // }, false)
    
+
+    /* This is used to remove the li item from the ul when clicked */
     
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
